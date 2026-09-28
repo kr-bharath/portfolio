@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Portfolio of K R Bharath — AI Engineering, QA Automation and Data Science." />
+<title>K R Bharath — AI Engineering &amp; Quality Systems</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230c766e'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23e8785c'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header class="site-header" id="top">
+  <nav class="nav shell">
+    <a class="wordmark" href="#top" aria-label="K R Bharath home"><span>K R</span> BHARATH</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    <div class="nav-links" id="navLinks">
+      <a href="#work">Selected work</a>
+      <a href="#experience">Experience</a>
+      <a href="#approach">Approach</a>
+      <a class="nav-contact" href="#contact">Let's talk <span>↗</span></a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero shell">
+    <div class="hero-kicker reveal"><span class="signal"></span> Chennai, India · Open to opportunities</div>
+    <div class="hero-grid">
+      <div class="hero-copy reveal">
+        <p class="section-label">01 / Profile</p>
+        <h1>Building intelligent systems that <em>hold up</em>.</h1>
+        <p class="hero-description">AI engineering, quality automation, and data science for products that need to be useful, explainable, and dependable.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#work">Explore the work <span>↓</span></a>
+          <a class="text-link" href="mailto:krbharath0592@gmail.com">krbharath0592@gmail.com <span>↗</span></a>
+        </div>
+      </div>
+      <div class="hero-aside reveal">
+        <div class="orbit-card">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit-core">AI<br /><span>+</span><br />QA</div>
+          <span class="orbit-tag tag-top">reasoning</span><span class="orbit-tag tag-right">reliability</span><span class="orbit-tag tag-bottom">decisions</span>
+        </div>
+        <div class="hero-note"><span class="mono">CURRENT FOCUS</span><strong>Applied AI with a quality mindset.</strong><span>From retrieval and evaluation to self-healing automation.</span></div>
+      </div>
+    </div>
+    <div class="hero-footer reveal"><span>Scroll to explore</span><div class="line"></div><span class="mono">2026 / PORTFOLIO</span></div>
+  </section>
+
+  <section class="intro section shell" id="approach">
+    <div class="section-heading reveal"><p class="section-label">02 / Perspective</p><h2>Different disciplines.<br /><em>One operating principle.</em></h2></div>
+    <div class="intro-body reveal"><p>I design systems with two questions in mind: can they make a useful decision, and can we trust the way they got there?</p><p>That means building RAG agents with evaluation gates, test frameworks that recover from change, and predictive models that move beyond a notebook into a usable workflow.</p><a class="circle-link" href="#work" aria-label="Jump to selected work">↘</a></div>
+  </section>
+
+  <section class="work section shell" id="work">
+    <div class="work-top reveal"><div><p class="section-label">03 / Selected work</p><h2>Proof over promise.</h2></div><p class="work-summary">A focused selection of systems built across AI Engineering, QA Automation, Security, and Data Science.</p></div>
+    <div class="filters reveal" role="group" aria-label="Filter projects"><button class="filter active" data-filter="all">All work</button><button class="filter" data-filter="ai">AI Engineering</button><button class="filter" data-filter="qa">QA &amp; Security</button><button class="filter" data-filter="data">Data Science</button></div>
+    <div class="project-list">
+      <article class="project-feature project-card reveal" data-category="ai">
+        <div class="project-visual visual-teal"><div class="visual-label">01 — AGENTIC RAG</div><div class="visual-flow"><span>retrieve</span><i>→</i><span>evaluate</span><i>→</i><span>synthesize</span></div><div class="visual-caption">KNOWLEDGEFORGE AI</div></div>
+        <div class="project-content"><div class="project-meta"><span>AI Engineering</span><span>Production-styled system</span></div><h3>KnowledgeForge AI</h3><p>A RAG system with an agentic reasoning layer for multi-document tasks. It combines retrieval, self-checking, semantic caching, and optional local-model routing before reaching the cloud LLM.</p><div class="tags"><span>FastAPI</span><span>LangGraph</span><span>pgvector</span><span>Redis</span><span>Docker</span></div><div class="project-links"><a href="https://github.com/kr-bharath/AI-AGENTIC" target="_blank" rel="noopener">View repository <b>↗</b></a><a href="https://ai-agentic-dyvg.onrender.com/docs" target="_blank" rel="noopener">Live API docs <b>↗</b></a></div></div>
+      </article>
+      <article class="project-card reveal" data-category="ai"><div class="project-number">02</div><div class="project-meta"><span>AI Engineering</span><span>Verified from repository</span></div><h3>Clinical Protocol Agent</h3><p>A safety-conscious agent for synthetic diabetes and hypertension scenarios. It retries weak retrieval, checks groundedness, and escalates red-flag or out-of-scope cases instead of guessing.</p><div class="tags"><span>LangGraph</span><span>Chroma</span><span>sentence-transformers</span><span>Eval harness</span></div><a class="card-link" href="https://github.com/kr-bharath/CLINICAL_AGENT" target="_blank" rel="noopener">Inspect the build <b>↗</b></a></article>
+      <article class="project-card reveal" data-category="qa"><div class="project-number">03</div><div class="project-meta"><span>QA &amp; Security</span><span>Security testing</span></div><h3>Fintech API Security Framework</h3><p>A BDD security suite for a fintech target application, combining OWASP Top 10 coverage, AI-generated fuzzing payloads, Allure evidence, and anomaly detection.</p><div class="tags"><span>Python</span><span>Behave BDD</span><span>FastAPI</span><span>Isolation Forest</span></div><a class="card-link" href="https://github.com/kr-bharath/BANKING_AI-fintech-security-framework" target="_blank" rel="noopener">Inspect the build <b>↗</b></a></article>
+      <article class="project-card reveal" data-category="qa"><div class="project-number">04</div><div class="project-meta"><span>QA Automation</span><span>Self-directed build</span></div><h3>Intelli Flaky Test Detector</h3><p>A Cypress and Cucumber BDD suite that classifies stability across repeated runs, recovers selectors through fallback strategies, and makes retries more deliberate.</p><div class="tags"><span>Cypress</span><span>Cucumber</span><span>Node.js</span><span>Chart.js</span></div><a class="card-link" href="https://github.com/kr-bharath/Intelle_Flaky_Test" target="_blank" rel="noopener">Inspect the build <b>↗</b></a></article>
+      <article class="project-card reveal" data-category="data"><div class="project-number">05</div><div class="project-meta"><span>Data Science</span><span>Coursework project</span></div><h3>Industrial Copper Modeling</h3><p>Regression and classification models for copper pricing and lead status, with preprocessing for missing values, outliers, and skewed data inside an interactive prediction app.</p><div class="tags"><span>Python</span><span>Scikit-learn</span><span>Streamlit</span><span>Seaborn</span></div><a class="card-link" href="https://github.com/kr-bharath/Industrial-Copper-Modeling-" target="_blank" rel="noopener">Inspect the build <b>↗</b></a></article>
+      <article class="project-card reveal" data-category="data"><div class="project-number">06</div><div class="project-meta"><span>Data Science</span><span>Analytics</span></div><h3>PhonePe Pulse Explorer</h3><p>An interactive data exploration project using a MySQL-backed workflow, Streamlit, and Plotly to surface patterns from the PhonePe Pulse dataset.</p><div class="tags"><span>Python</span><span>MySQL</span><span>Streamlit</span><span>Plotly</span></div><a class="card-link" href="https://github.com/kr-bharath/Phonepe-Pulse-Data-Visualization-and-Exploration-A-User-Friendly-Tool-Using-Streamlit-and-Plotly" target="_blank" rel="noopener">Inspect the build <b>↗</b></a></article>
+      <article class="project-card reveal" data-category="ai"><div class="project-number">07</div><div class="project-meta"><span>AI Engineering</span><span>Regulatory domain</span></div><h3>KYC/AML Compliance RAG Assistant</h3><p>A citation-grounded, version-aware RAG assistant over RBI's KYC/AML regulatory corpus. Catches superseded regulations and surfaces version conflicts — plain vector search was found to actively prefer outdated guidance over current rules.</p><div class="tags"><span>LangGraph</span><span>pgvector</span><span>Ollama</span><span>FastAPI</span><span>Docker</span></div><a class="card-link" href="https://github.com/kr-bharath/KYC-Compliance-Rag-Assistant" target="_blank" rel="noopener">Inspect the build <b>↗</b></a></article>
+      <article class="project-card reveal" data-category="qa"><div class="project-number">08</div><div class="project-meta"><span>QA Automation</span><span>Autonomous framework</span></div><h3>Master QA Agent</h3><p>An autonomous test automation framework that crawls live web apps, dynamically generates Cypress E2E tests, self-heals broken selectors, detects flaky tests with ML, and delivers AI-powered root cause analysis through a Streamlit dashboard.</p><div class="tags"><span>Python</span><span>Cypress</span><span>scikit-learn</span><span>OpenCV</span><span>Streamlit</span></div><a class="card-link" href="https://github.com/kr-bharath/AGENTIC-QA-" target="_blank" rel="noopener">Inspect the build <b>↗</b></a></article>
+    </div>
+  </section>
+
+  <section class="metrics section shell"><div class="metric reveal"><strong>150<span>+</span></strong><p>automation scenarios<br />delivered professionally</p></div><div class="metric reveal"><strong>2<span>+</span></strong><p>years in quality<br />engineering roles</p></div><div class="metric reveal"><strong>3</strong><p>interconnected<br />engineering disciplines</p></div><div class="metric reveal"><strong>1</strong><p>quality-minded<br />way of working</p></div></section>
+
+  <section class="experience section shell" id="experience"><div class="section-heading reveal"><p class="section-label">04 / Experience</p><h2>Engineering judgment,<br /><em>earned in delivery.</em></h2></div><div class="timeline"><article class="timeline-item reveal"><div class="timeline-date">07.2022 — 02.2024</div><div><h3>Cognizant <span>/ Associate</span></h3><p>Designed and maintained Cypress and Playwright automation across UI, API, Salesforce, and SAP workflows. Integrated suites with Jenkins and Git while working through Agile releases, defect lifecycle, and cross-system validation.</p><div class="timeline-tags"><span>Cypress</span><span>Playwright</span><span>JavaScript / TypeScript</span><span>API testing</span></div></div></article><article class="timeline-item reveal"><div class="timeline-date">01.2022 — 06.2022</div><div><h3>People Prime Worldwide <span>/ Software Test Engineer</span></h3><p>Built automation for enterprise web applications, prepared test cases from requirements, supported regression and integration testing, and partnered with QA and development teams through sprint delivery.</p><div class="timeline-tags"><span>Cypress</span><span>Playwright</span><span>Jira</span><span>Agile delivery</span></div></div></article></div></section>
+
+  <section class="credentials section shell"><div class="credentials-copy reveal"><p class="section-label">05 / Foundation</p><h2>Continuous learning,<br /><em>made practical.</em></h2><p>The formal foundation spans Information Technology, advanced programming, and data science. The portfolio work shows how that foundation is being applied to modern systems.</p></div><div class="credential-list reveal"><div><span>2024</span><strong>Master Data Science Program</strong><small>GUVI · IIT-M Pravartak</small></div><div><span>2024</span><strong>Certified Professional in Advanced Programming</strong><small>GUVI · IIT-M Pravartak</small></div><div><span>2014</span><strong>B.Tech, Information Technology</strong><small>Sri Ramanujar Engineering College</small></div></div></section>
+
+  <section class="contact section shell" id="contact"><div class="contact-panel reveal"><p class="section-label">06 / Contact</p><h2>Have a difficult system<br /><em>worth making dependable?</em></h2><p>I’m open to AI Engineering, QA Automation, SDET, and Data Science opportunities where thoughtful engineering matters.</p><div class="contact-actions"><a class="button button-light" href="mailto:krbharath0592@gmail.com">Start a conversation <span>↗</span></a><button class="copy-button" id="copyEmail" data-email="krbharath0592@gmail.com">Copy email</button></div><span class="copy-status" id="copyStatus" aria-live="polite"></span></div></section>
+</main>
+<footer class="footer shell"><a class="wordmark" href="#top"><span>K R</span> BHARATH</a><p>AI Engineering · Quality Systems · Data Science</p><a href="https://github.com/kr-bharath" target="_blank" rel="noopener">GitHub ↗</a></footer>
+<script src="script.js" defer></script>
+</body>
+</html>
